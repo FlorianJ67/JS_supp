@@ -14,7 +14,17 @@
     margin: 5px;
     animation: appear 1s;
     border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.8s, color 0.8s, transform 0.8s;
 }
+.box-valid{
+    background-color: #ccc;
+    color: #aaa;
+    transform: scale(0.8);
+}
+.box.error {color: rgb(197, 22, 22);background-color: rgb(202, 114, 114);}
+.box.succes {color: rgb(76, 197, 64);background-color: rgb(141, 184, 145);}
+.box.notice {color: rgb(91, 63, 214);background-color: rgb(170, 174, 219); cursor: not-allowed;}
 .box-clicked {
     background-color: #ccc;
     color:#aaa;
